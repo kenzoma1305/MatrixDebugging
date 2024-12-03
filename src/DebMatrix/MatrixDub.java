@@ -39,10 +39,10 @@ public class MatrixDub {
         }
 
         // Paso 3: Intentar acceder a un índice fuera de los límites
-        try {
+        if (3 < matrix.length) {
             System.out.println("\nAccediendo al elemento en [3][0]: " + matrix[3][0]);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("\nError: " + e.toString());
+        } else {
+            System.out.println("\nÍndice fuera del límite.");
         }
 
         // Paso 4: Intentar realizar un cálculo incorrecto con la matriz
